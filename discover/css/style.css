@@ -1,0 +1,1012 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top; width: 100%; height: auto;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+/*Fonts*/
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/lato-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/lato-v17-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v17-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/lato-v17-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v17-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/*--------------------*/
+
+
+
+body {
+    font-family:'Lato';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+
+/*Header*/
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    transition: .2s linear;
+}
+
+.header_active{
+    background: #0E1D28;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 56px;
+    transition: .2s linear;
+}
+
+.header__wrapper_active{
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.wrapper {
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.wrapper-full{
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 42px;
+}
+
+.section-title::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 253px;  
+    background-color: #006DFE;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item{
+    margin-right: 82px;
+}
+
+.header__list > .header__item:last-child{
+    margin-right: 0;
+}
+
+.header__link {
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__link:hover, .header__link:focus, .header__link:active {
+    opacity: .75;
+}
+
+.header__link:focus {
+    color: #E15C3D;
+}
+
+.header__link:active {
+    color: #3B3B3B;
+}
+
+.header__burger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 28px;
+}
+
+.burger__line{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+/*--------------------*/
+
+
+
+/*Intro*/
+
+.intro {
+    padding-top: 263px;
+    padding-bottom: 223px;
+    min-height: 100vh;
+    background: url(../img/intro-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.intro__title {
+    margin-bottom: 22px;
+    max-width: 619px;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px;
+    color: #fff;
+}
+
+.intro__subtitle {
+    margin-bottom: 59px;
+    max-width: 546px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+}
+
+.search-form__info {
+    display: flex;
+    flex-wrap: wrap;
+}
+.search-form__field {
+    width: 297px;
+    background: url(../img/svg/bullet-round.svg) no-repeat left 6px;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5;
+    margin-right: 60px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+}
+
+.search-form__field::placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+}
+
+.search-form__submit {
+    padding: 15px 39px 14px ;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1B7DFF;
+}
+
+.search-form__submit:hover, .search-form__submit:focus, .search-form__submit:active {
+    background-color: #0c51ac;
+}
+
+/*--------------------*/
+
+
+
+/*Benefits*/
+
+.benefits{
+    margin-bottom: 131px;
+}
+
+.benefits__wrap{
+    position: relative;
+    max-width: 1260px;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+}
+
+.benefits__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    padding: 72px 0 88px 79px;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 42px;
+    color: #102746;
+    background-color: #fff;
+}
+
+.benefits__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 55px;
+    padding: 0 100px;
+}
+
+.benefits__card{
+    grid-column: span 1;
+    padding-bottom: 112px;
+}
+
+.benefits__card-pic {
+    margin-bottom: 37px;
+    max-width: 66px;
+    margin-bottom: 37px;
+    margin-bottom: 37px;
+}
+
+.benefits__card-thumb{
+    display: block;
+}
+
+.benefits__card-title{
+    margin-bottom: 26px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.benefits__card-desc{
+    margin-bottom: 39px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.benefits__card-more{
+    display: inline-block;
+    padding-right: 59px;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #006DFE;
+    background: url(../img/svg/arrowRight.svg) no-repeat 95% center;
+    transition: .2s all;
+}
+
+.benefits__card-more:hover, .benefits__card-more:focus{
+    background: url(../img/svg/arrowRight.svg) no-repeat right center;
+}
+
+/*--------------------*/
+
+
+
+/*Places*/
+
+.places{
+    margin-bottom: 131px;
+}
+
+.places__caption{
+    margin-bottom: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.places__title{
+    margin-right: 15px;
+}
+
+.places__view-all{
+    padding-right: 59px;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #006DFE;
+    background: url(../img/svg/arrowRight.svg) no-repeat 95% center;
+    transition: .2s all;
+}
+
+.places__view-all:hover,.places__view-all:focus {
+    background: url(../img/svg/arrowRight.svg) no-repeat right center;
+}
+
+.places__card{
+    position: relative;
+    overflow: hidden;
+    transition: .2s all;
+}
+
+.places__card:hover .places__card-thumb{
+    transform: scale(1.2);
+}
+
+.places__cards{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 10px;
+}
+
+.places__card_size-lg{
+    grid-column: span 3;
+    height: 354px;
+}
+
+.places__card_size-small{
+    grid-column: span 2;
+    height: 283px;
+}
+
+.places__card-thumb{
+    width: 100%;
+    transition: .2s all;
+}
+
+.places__card-thumb_size-lg{
+    height: 354px;
+    object-fit: cover;
+}
+
+.places__card-thumb_size-small{
+    height: 283px;
+    object-fit: cover;
+}
+
+.places__card-title{
+    position: absolute;
+    bottom: 27px;
+    left: 29px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #fff;
+}
+
+.places__card-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*--------------------*/
+
+
+/*Tours*/
+
+.tours {
+    margin-bottom: 139px;
+}
+
+.tours__tour {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:108px;
+    margin-bottom: 77px;
+    align-items: center;
+}
+
+.wrapper-full > .tours__tour:nth-child(1) > .tour__info{
+    padding-left: 31px;
+}
+
+.wrapper-full > .tours__tour:nth-child(2) > .tour__info{
+    padding-left: 47px;
+}
+
+.tour__title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #102746;
+    margin-bottom: 85px;
+}
+.tour__desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: #102746;
+    margin-bottom: 58px;
+}
+
+.tour__more {
+    padding-right: 59px;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #006DFE;
+    background: url(../img/svg/arrowRight.svg) no-repeat 95% center;
+    transition: .2s all;
+}
+
+.tour__more:hover, .tour__more:focus {
+    background: url(../img/svg/arrowRight.svg) no-repeat right center;
+}
+
+/*--------------------*/
+
+
+
+/*Top*/
+
+.top {
+    margin-bottom:86px ;
+}
+
+.top__cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 52px;
+    grid-row-gap: 69px;
+}
+
+.top__card{
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+}
+
+.top__title {
+    margin-bottom: 54px;
+}
+
+.top__card-pic{
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.top__card-stats{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 16px 25px 15px;
+    width: 100%;
+    color: #fff;
+    background: rgba(21,24,36,0.6);
+}
+
+.top__card-title{
+    flex-grow: 1;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.top__card-likes{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 14px;
+    padding-right: 20px;
+    background-image: url(../img/svg/like.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.top__card-comments{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 23px;
+    background-image: url(../img/svg/comments.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.top__card-desc{
+    flex-grow: 1;
+    margin-bottom: 31px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #102746;
+}
+
+.top__card-more{
+    align-self: flex-start;
+    padding: 12px 19px 11px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    background-color: #006DFE;
+}
+
+.top__card-more:hover , .top__card-more:focus {
+    background-color: #0c51ac;
+}
+
+/*--------------------*/
+
+
+/*Video*/
+
+.videos {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.video__item{
+    padding-top: 56.25%;
+}
+
+.videos__wrapper {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.video__element{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*--------------------*/
+
+
+/*Footer*/
+
+.footer{
+    background-color:#0E1D28;
+    padding: 119px 0 118px;
+}
+
+.footer__item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__logo{
+    flex: 1 1 50%;
+}
+
+.footer__logo-pic{
+    max-width: 170px;
+}
+
+.footer__nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 1 50%; 
+}
+
+.footer__menu-item {
+    margin-bottom: 4px;
+}
+
+.footer__menu-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.footer__menu-link {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    opacity: .75;
+}
+
+.footer__menu-link:hover, .footer__menu-link :focus {
+    opacity: 1;
+}
+
+/*--------------------*/
+
+
+
+/*Media*/
+
+@media screen and (max-width: 1439px) {
+    .videos{
+        margin-bottom: 0;
+    }
+}
+
+
+@media screen and (max-width:1259px) {
+    .benefits {
+        margin-bottom: 0;
+    }
+
+    .benefits__wrap{
+        box-shadow: none;
+    }
+
+    .benefits__cards{
+        padding: 20px;
+    }
+
+    .benefits__title{
+        padding: 65px 20px 45px;
+    }
+
+    .tours__tour {
+        grid-column-gap: 35px;
+        grid-row-gap: 20px;
+    }
+
+    .tour__pic{
+        height: 100%;
+    }
+
+    .tour__thumb{
+        height: 100%;
+    }
+
+    .wrapper-full > .tours__tour:nth-child(1) > .tour__info{
+        padding-left: 0;
+    }
+
+    .wrapper-full > .tours__tour:nth-child(2) > .tour__info{
+        padding-left: 0;
+    }
+
+    .footer{
+        padding: 81px 0 80px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+
+   .search-form__field {
+       margin-bottom: 20px;
+   }
+
+   .places__card_size-lg{
+    grid-column: span 6;
+    height: 280px;
+    }
+
+    .places__card_size-small{
+        grid-column: span 6;
+        height: 280px;
+    }
+
+    .top__cards{
+        column-gap: 25px;
+        row-gap: 50px;
+    }
+
+    .top__card-pic{
+        margin-bottom: 16px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .header__wrapper{
+        padding-top: 32px;
+    }
+    
+    .header__burger{
+        display: flex;
+    }
+
+    .header__nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 75px;
+        background-color: #000000;
+        transform: translateX(-100%);
+    }
+
+    .header__nav-active{
+        transform: translateX(0);
+        transition: .2s all;
+    }
+
+    .header__nav-close{
+        position: absolute;
+        top: 65px;
+        right: 65px;
+        display: flex;
+        flex-direction: column;
+        width: 40px;
+        height: 40px;
+        transition: .2s all;
+        z-index: 2;
+    }
+
+    .header__nav-close-line{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    .header__nav-close-line:first-child{
+        align-self: flex-end;
+        transform: rotate(45deg);
+    }
+
+    .header__nav-close-line:last-child{
+        align-self: flex-end;
+        transform: rotate(-45deg);
+    }
+
+    .header__item{
+        width: 100%;
+        margin-right: 0;
+        margin-block-start: 30px;
+    }
+
+    .header__item:last-child{
+        margin-bottom: 0;
+    }
+
+    .header__link{
+        font-size: 42px;
+        line-height: 48px;
+    }
+
+   .tour__title{
+        margin-bottom: 20px;
+    }
+
+    .tour__desc{
+        margin-bottom: 40px;
+    }
+
+    .top__card{
+        grid-column: span 3;
+    }
+
+    .top__card-pic{
+        margin-bottom: 12px;
+    }
+
+    .tour__pic, .tour__info{
+        grid-column: span 2;
+    }
+
+    .tour__pic_mobile{
+        grid-row-start: -1;
+    }
+
+    .top__card-desc{
+        margin-bottom: 24px;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    .section-title {
+        margin-bottom: 28px;
+        font-size: 28px;
+        line-height: 40px;
+    }
+    
+    .section-title::after {
+        content: '';
+        height: 2px;
+        width: 80px;  
+        background-color: #006DFE;
+    }
+
+    .intro{
+        padding-top: 160px;
+    }
+    
+    .intro__title{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .intro__subtitle{
+        font-size: 14px;
+    }
+
+    .search-form__field{
+        margin-right: 0;
+        width: 100%;
+        background: url(../img/svg/bullet-round.svg) no-repeat left 4px;
+        background-size: 16px;
+        padding-left: 28px;
+        padding-bottom: 16px;
+    }
+
+    .search-form__field::placeholder{
+        padding-bottom: 16px;
+    }
+
+    .search-form__submit{
+        width: 100%;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+
+    .benefits__card{
+        grid-column: span 2;
+        padding-bottom: 60px;
+    }
+
+    .benefits__card-pic{
+        margin-bottom: 16px;
+    }
+
+    .benefits__card-title {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .benefits__card-desc {
+        margin-bottom: 24px;
+        font-size: 14px;
+    }
+
+    .places{
+        margin-bottom: 80px;
+    }
+
+    .places__caption{
+        margin-bottom: 12px;
+    }
+
+    .places__card-title {
+        bottom: 16px;
+        left: 18px;
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .places__card_size-lg{
+        height: 280px;
+    }
+
+    .places__card_size-small{
+        height: 280px;
+    }
+    .tours{
+        margin-bottom: 80px;
+    }
+
+    .tours__tour{
+        margin-bottom: 44px;
+    }
+
+
+
+    .tour__desc{
+        margin-bottom: 20px;
+    }
+
+    .top__card{
+        grid-column: span 6;
+    }
+
+    .top__card-more{
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer{
+        padding: 40px 0;
+
+    }
+    .footer__logo{
+        flex: 1 1 100%;
+        margin-bottom: 24px;
+    }
+    
+    .footer__nav{
+        flex: 1 1 100%; 
+    }
+
+    .footer__menu:not(:last-child){
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    
+    .footer__menu-item {
+        margin-bottom: 4px;
+    }
+    
+    .footer__menu-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #fff;
+    }
+    
+    .footer__menu-link {
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+        opacity: .75;
+    }
+
+
+}
+
+@media screen and (max-width:360px){
+    .header__burger{
+        width: 28px;
+        height: 20px;
+    }
+
+    .header__nav{
+        padding: 40px;
+    }
+
+    .header__nav-close{
+        top: 40px;
+        right: 40px;
+    }
+
+    .header__item{
+        margin-block-start: 16x;
+    }
+
+    .header__link{
+        font-size: 32px;
+    }
+
+    .benefits__card{
+        grid-column: span 3;
+    }
+}
+
+
+
+
+/*--------------------*/
+
+

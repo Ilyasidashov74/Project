@@ -1,0 +1,592 @@
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url('fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Regular';
+    font-size: 16px;
+    outline: none;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1130px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header__left {
+    float: left;
+}
+
+.header__right {
+    float: right;
+}
+
+.header__logo {
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header__nav {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.header__nav ul li {
+    display: inline-block;
+}
+
+.header__nav ul {
+    list-style-type: none;
+}
+
+.header__nav ul li a {
+    color: white;
+    margin-right: 24px;
+    transition: color 0.15s;
+}
+
+.header__nav ul li a:hover {
+    color: #ff4b64;
+    transition: color 0.15s;
+}
+
+.header__login {
+    border: none;
+    background-color: transparent;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    transition: background-color 0.15s;
+}
+
+.header__login:hover {
+    background-color: #ff4b64;
+    transition: background-color 0.15s;
+    border-color: #ff4b64;
+}
+
+/*FIRST BLOCK*/
+
+.first {
+    padding-top: 275px;
+    padding-bottom: 244px;
+    height: 680px;
+    background-image: url(/img/first-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.first__heading {
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    font-size: 72px;
+}
+
+.first__descr {
+    margin-top: 36px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 0.75px;
+}
+
+.first__form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -27px;
+    z-index: 8;
+    font-size: 0;
+    width: 973px;
+}
+
+.first__form input {
+    width: 34.5%;
+    height: 55px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    padding-left: 32px;
+}
+
+.first__form input:nth-child(2) {
+    border-left: none;
+}
+
+.first__form .small-input {
+    width: 19%;
+    border: none;
+}
+
+.first__form button {
+    width: 12%;
+    height: 55px;
+    border: none;
+    color: #fff;
+    background-color: #ff4b64;
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+
+.first__form button:hover {
+    background-color: black;
+    transition: background-color 0.15s;
+}
+
+.first__form input::placeholder {
+    color: #818181;
+}
+
+/*FLIGHTS*/
+
+.flights {
+    padding-top: 102px;
+    padding-bottom: 23px;
+    background-color: #fff;
+}
+
+.flights__heading {
+    color: #484848;
+    font-size: 30px;
+    float: left;
+    padding-bottom: 35px;
+}
+
+.flights__link {
+    float: right;
+}
+
+.flights__link ul {
+    list-style-type: none;
+}
+
+.flights__link ul li {
+    display: inline-block;
+}
+
+.flights__link ul li a {
+    color: #484848;
+    line-height: 32px;
+    font-size: 16px;
+    margin-left: 25px;
+}
+
+.flights__link ul li a.active {
+    color: #ff4b64;
+    font-weight: 500;
+}
+
+.flights__table {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.flights__table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.flights__table table thead {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.flights__table table thead td {
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+.flights__table table thead td:first-child {
+    text-align: left;
+}
+
+.flights__table table tbody td {
+    padding: 45px 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.flights__table table tbody td:first-child {
+    text-align: left;
+}
+
+.flights__table table tbody tr {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.flights__table table tbody td span {
+    display: block;
+    margin-top: 15px;
+    color: #9a9a9a;
+}
+
+.flights__table table tbody td:first-child {
+    padding-right: 30px;
+}
+
+.flights__table table tbody td:nth-child(2) {
+    padding-right: 15px;
+}
+
+.flights__table table tbody td:nth-child(4) {
+    padding-right: 25px;
+}
+
+.flights__table table tbody td:last-child {
+    text-align: right;
+}
+
+.flights__table table tbody td img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.flights__table table tbody td .text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 24px;
+}
+
+.flights__table table tbody td button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-style: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid #ff4b64;
+    cursor: pointer;
+}
+
+.flights__table table tbody td button:hover {
+    background-color: #ff4b64;
+}
+
+.flights__table__link {
+    text-align: right;
+}
+
+.flights__table__link a {
+    margin-top: 43px;
+    display: inline-block;
+    color: #484848;
+    font-size: 16px;
+}
+
+/*HOTELS*/
+
+.hotels {
+    padding-top: 102px;
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+
+.hotels__heading {
+    color: #484848;
+    font-size: 30px;
+    float: left;
+    padding-bottom: 35px;
+}
+
+.hotels__link {
+    float: right;
+}
+
+.hotels__link ul {
+    list-style-type: none;
+}
+
+.hotels__link ul li {
+    display: inline-block;
+}
+
+.hotels__link ul li a {
+    color: #484848;
+    line-height: 43px;
+    font-size: 16px;
+    margin-left: 25px;
+}
+
+.hotels__link ul li a.active {
+    color: #ff4b64;
+    font-weight: 500;
+}
+
+.hotels__items {
+    width: 100%;
+    font-size: 0%;
+    margin-top: 53px;
+}
+
+.hotels__item {
+    display: inline-block;
+    border: 1px solid #e6e6e6;
+    width: 31.5%;
+    margin-right: 2.75%;
+    margin-bottom: 27px;
+}
+
+.hotels__item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.hotels__image {
+    height: 200px;
+}
+
+.hotels__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotels__text {
+    padding: 23px 14px;
+}
+
+.hotels__props {
+    width: 100%;
+    color: #9a9a9a;
+    margin-top: 21px;
+}
+
+.hotels__distance {
+    float: left;
+    margin-bottom: 15px;
+}
+
+.hotels__services {
+    float: right;
+}
+
+.hotels__button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-style: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid #ff4b64;
+    cursor: pointer;
+}
+
+.hotels__button:hover {
+    background-color: #ff4b64;
+}
+
+.hotels__link {
+    text-align: right;
+}
+
+.hotels__link a {
+    margin-top: 15px;
+    display: inline-block;
+    color: #484848;
+    font-size: 16px;
+}
+
+/*FOOTER*/
+
+.footer .container {
+    font-size: 0;
+}
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    font-size: 0;
+}
+
+.footer__column {
+    vertical-align: top;
+    width: 22.5%;
+    display: inline-block;
+}
+
+.footer__column:nth-child(2) {
+    width: 28%;
+}
+
+.footer__column:nth-child(3) {
+    width: 23.5%;
+}
+
+.footer__column:last-child {
+    width: 25%;
+}
+
+.footer__title {
+    color: #484848;
+    font-size: 30px;
+    margin-bottom: 52px;
+}
+
+.footer__nav {
+    list-style-type: none;
+}
+
+.footer__nav a {
+    color: #484848;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 22px;
+}
+
+.footer__mail {
+    display: inline-block;
+    color: #ff4b64;
+    margin-top: 20px;
+}
+
+/*MEDIA*/
+
+@media(max-width:1130px) {
+    .first__form {
+        width: 100%;
+        padding: 0 10px;
+        max-width: 993px;
+    }
+}
+
+@media(max-width: 768px) {
+    .hotels__items {
+        text-align: center;
+    }
+    .hotels__item {
+        width: 48%;
+        margin-right: 4% !important;
+    }
+    .hotels__item:nth-child(2n) {
+        margin-right: 0 !important;
+    }
+    .hotels__item:last-child {
+        margin-right: 0;
+    }
+    .hotels__text {
+        text-align: left;
+    }
+    .footer__column {
+        width: 50% !important;
+        margin-bottom: 30px;
+    }
+    .flights__table {
+        overflow-x: scroll;
+    }
+    .flights__table table {
+        width: 748px;
+    }
+    .first__form input {
+        width: 30%;
+    }
+    .first__form .small-input {
+        width: 20%;
+    }
+    .first__form button {
+        width: 20%;
+    }
+    .header__nav {
+        display: none;
+    }
+    
+}
+
+@media(max-width: 560px) {
+    .flghts {
+        padding: 40px 0;
+        padding-top: 90px;
+    }
+    .flights__heading {
+        float: none;
+    }
+    .flights__links {
+        float: none;
+        margin-top: 20px;
+    }
+    .flights__link ul li:first-child a {
+        margin-left: 0;
+    }
+    .hotels__item {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    .footer__column {
+        width: 100% !important;
+    }
+    .hotels__link ul li a {
+        margin-left: 10px;
+        margin-top: 0;
+    }
+    .first__heading {
+        font-size: 45px;
+    }
+    .first {
+        min-height: 450px;
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+    .first__form {
+        bottom: -57px;
+    }
+    .first__form input {
+        width: 50%;
+    }
+    .first__form .small-input {
+        width: 50%;
+        margin-top: 3px;
+        border-left: 1px solid #e6e6e6;
+    }
+    .first__form button {
+        width: 50%;
+    }
+}

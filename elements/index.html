@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/choices.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+    <title>Элементы</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="flex">
+            <div class="categories">
+                <h1>Категории:</h1>
+                <div class="top">
+                    <label for="check">
+                        <input type="checkbox" name="check" id="check">
+                        Динозавры
+                        <span></span>
+                    </label>
+                </div>
+                <div class="top">
+                    <label for="two">
+                        <input type="checkbox" name="check" id="two">
+                        Медведи
+                        <span></span>
+                    </label>
+                </div>
+                <div class="top">
+                    <label for="three">
+                        <input type="checkbox" name="check" id="three">
+                        Косули
+                        <span></span>
+                    </label>
+                </div>
+                <div class="top">
+                    <label for="five">
+                        <input type="checkbox" name="check" id="five">
+                        Лисы
+                        <span></span>
+                    </label>
+                </div>
+                <div class="top">
+                    <label for="six">
+                        <input type="checkbox" name="check" id="six">
+                        Волки
+                        <span></span>
+                    </label>
+                </div>
+                <div class="top">
+                    <label for="seven">
+                        <input type="checkbox" name="check" id="seven">
+                        Олени и лоси
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="choic">
+                <select class="form-control" name="select" id="select">
+                    <option selected="true" disabled="disabled" value="1">Материал</option>
+                    <option value="">Древесина</option>
+                    <option value="">Металл</option>
+                    <option value="">Камень</option>
+                    <option value="">Пластик</option>
+                    <option value="">Композитный</option>
+                    <option value="">Гипс</option>
+
+                </select>
+                <script src="/js/choices.min.js"></script>
+                <script>
+                    const element = document.querySelector('select');
+                    const choices = new Choices(element, {
+                        searchenabeled: false,
+                        shouldSort: false
+
+                    });
+                </script>
+
+            </div>
+
+            <div class="hero">
+                <div id="map" style="width: 460px; height: 460px">
+                    <script type="text/javascript">
+                        // Функция ymaps.ready() будет вызвана, когда
+                        // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+                        ymaps.ready(init);
+                        function init() {
+                            // Создание карты.
+                            var myMap = new ymaps.Map("map", {
+                                // Координаты центра карты.
+                                // Порядок по умолчанию: «широта, долгота».
+                                // Чтобы не определять координаты центра карты вручную,
+                                // воспользуйтесь инструментом Определение координат.
+                                center: [48.87231966130511, 2.353980258330344],
+                                // Уровень масштабирования. Допустимые значения:
+                                // от 0 (весь мир) до 19.
+                                zoom: 18
+                            });
+
+                            var myPlacemark = new ymaps.Placemark([48.87221778420494, 2.354193387778464], {}, {
+                                iconLayout: 'default#image',
+
+                                iconImageHref: 'image/sun.svg',
+                                iconImageSize: [28, 40],
+                                iconImageOffset: [-3, -42]
+                            });
+                            // Размещение геообъекта на карте.
+
+                            myMap.geoObjects.add(myPlacemark);
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <div class="kartoshechka">
+            <div class="tooltip" tabindex="0">
+                <div>
+                    <span>Следует отметить, что социально-экономическое развитие способствует повышению качества
+                        переосмысления внешнеэкономических политик.</span>
+                    <div class="marker">
+                        <div class="smetanka">
+                            Глава 2,страница 176
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="customSkroll" data-simplebar>
+
+                Сложно сказать, почему многие известные личности представлены в исключительно положительном
+                свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены
+                соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная
+                концепция общественного уклада представляет собой интересный эксперимент проверки
+                глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее:
+                непосредственные участники технического прогресса освещают чрезвычайно интересные особенности
+                картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем
+                настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные
+                вещи - безусловно открывает новые горизонты для первоочередных требований.
+                Сложно сказать, почему многие известные личности представлены в исключительно положительном
+                свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены
+                соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная
+                концепция общественного уклада представляет собой интересный эксперимент проверки
+                глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее:
+                непосредственные участники технического прогресса освещают чрезвычайно интересные особенности
+                картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем
+                настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные
+                вещи - безусловно открывает новые горизонты для первоочередных требований.
+
+
+            </div>
+            <form action="" class="form">
+                <span class="orange">Как ваз зовут?</span>
+                <input name="Имя" type="text" placeholder="Имя*" data-validate-field="name">
+
+                <span class="orange">Укажите ваш телефон</span>
+                <input name="tel" type="tel" placeholder="телефон*" data-validate-field="tel"
+                    data-valedate-rules="phone">
+
+                <span class="orange">Укажите ваш E-mail</span>
+                <input name="E-mail" type="text" placeholder="E-mail*" data-validate-field="mail">
+
+                <button>Заказать</button>
+
+            </form>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="./js/inputmask.min.js"></script>
+    <script src="./js/just-validate.min.js"></script>
+    <script>
+        var selector = document.querySelector("input[type='tel']");
+
+        var im = new Inputmask("+7(999) 999-99-99");
+        im.mask(selector);
+
+        new JustValidate('.form', {
+            rules: {
+                name: {
+                    required: true,
+                    minLenght: 2,
+                    maxLenght: 10,
+                },
+                tel: {
+                    required: true,
+                    function: (name, value) => {
+                        const phone = selector.inputmask.unmaskedvalue()
+                        return Number(phone) && phone.lenght === 10
+                    }
+
+                },
+                mail: {
+                    required: true,
+                    email: true
+
+                },
+            },
+            messages: {
+                name: {
+                    required: 'Имя - обязательное поле!',
+                    minLenght: 'Имя должно быть не короче 2 символов',
+                    maxLenght: 'Имя должно быть не длиннее 10 символов'
+                },
+                mail: {
+                    required: 'E-mail-Обязательное поле!'
+                   
+                },
+                tel: {
+                    required: 'Телефон-Обязательное поле!'
+                }
+            }
+
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>
