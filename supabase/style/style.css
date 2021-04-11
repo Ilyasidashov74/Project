@@ -1,0 +1,343 @@
+/* Указываем box sizing */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Убираем внутренние отступы */
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+
+/* Убираем внешние отступы */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+
+/* Выставляем основные настройки по-умолчанию для body */
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+
+/* Упрощаем работу с изображениями */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Указываем понятную периодичность в потоке данных у article*/
+
+article>*+* {
+    margin-top: 1em;
+}
+
+
+/* Наследуем шрифты для инпутов и кнопок */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    color: #fff;
+    background-color: black;
+}
+
+.container {}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    margin-bottom: 137px;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+}
+
+.header__logo {
+    margin-right: 44px;
+}
+
+.header__link {
+    color: #EEEE;
+    font-size: 2.3vh;
+    margin-right: 50px;
+}
+
+.header__start {
+    border: 1px solid #24B47E;
+    border-radius: 4px;
+    padding: 7px 11px;
+    background-color: #24B47E;
+}
+
+.store__buscet {
+    color: #fff;
+    font-size: 3vh;
+    background-image: url(/img/buscet.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+.store__flex {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.store__title {
+    font-weight: bold;
+    font-size: 9vh;
+    padding-bottom: 50px;
+}
+
+.store__subtitle {
+    color: #E0E0E0;
+    font-size: 2.3vh;
+    padding-bottom: 16px;
+}
+
+.store__left {
+    width: 50%;
+}
+
+.store__text {
+    color: #E0E0E0;
+    font-size: 2.3vh;
+    padding-bottom: 59px;
+}
+
+.store__btn {
+    border: 1px solid #24B47E;
+    border-radius: 4px;
+    background: #24B47E;
+    padding: 9px 17px;
+    color: #fff;
+}
+
+.cards__flex {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.space {
+    margin-bottom: 21px;
+}
+
+.cards__text {
+    color: #E0E0E0;
+    font-size: 2.7vh;
+}
+
+.interaperable {
+    width: 30%;
+}
+
+.lighting {
+    width: 30%;
+}
+
+.dependable {
+    width: 30%;
+}
+
+.sleek {
+    padding-top: 200px;
+}
+
+.sleek__title {
+    font-size: 7vh;
+    margin-bottom: 16px;
+}
+
+.sleek__subtitle {
+    color: #E0E0E0;
+    font-size: 2.7vh;
+    margin-bottom: 70px;
+}
+
+.sleek__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sleek__right {
+    width: 50%;
+}
+
+.sleek__file {
+    margin-bottom: 20px;
+    font-size: 3vh;
+}
+
+.sleek__media {
+    color: #E0E0E0;
+    font-size: 2.6vh;
+    margin-bottom: 44px;
+}
+
+.sleek__check {
+    font-size: 3vh;
+    margin-bottom: 16px;
+}
+
+.sleek__profile {
+    background-color: #1F1F1F;
+    align-items: center;
+    padding: 18px;
+}
+
+.sleek__managment {
+    margin-bottom: 7px;
+}
+
+.sleek__update {
+    font-size: 2.1vh;
+    margin-bottom: 15px;
+}
+
+.sleek__supabase {
+    font-size: 2.1vh;
+    background-image: url(/img/supa.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+.sleek__btn {
+    margin-top: 3.3vh;
+    color: #fff;
+    background-color: #1374EF;
+    border-top: #1374EF;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.simple {
+    padding-top: 38vh;
+}
+
+.simple__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.simple__left {
+    width: 50%;
+}
+
+.simple__title {
+    font-size: 5.4vh;
+}
+
+.simple__subtitle {
+    margin-top: 1.8vh;
+    margin-bottom: 2.8vh;
+}
+
+.simple__text {
+    font-size: 2.1vh;
+    margin-bottom: 12.3vh;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content-active {
+    display: block;
+}
+
+.simple__right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.simple__item {
+    border: none;
+    background: transparent;
+    color: #666666;
+    font-size: 2vh;
+    height: 20px;
+    margin-right: 22px;
+}
+
+.simple__item:hover {
+    color: white;
+    border: none;
+}
+
+.simple__item:focus {
+    border: none;
+}
