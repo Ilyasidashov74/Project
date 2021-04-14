@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="/style/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
@@ -21,21 +21,21 @@
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
               </button>
-              <div class="menu">
+            <div class="menu">
                 <button class="close btn-reset" aria-label="Закрыть меню"></button>
-            
-            <div class="header__left">
-                <a href="" class="header__logo"> <img src="/img/logo.png"></a>
-                <a href="" class="header__link">Product</a>
-                <a href="" class="header__link">Developers</a>
-                <a href="" class="header__link">Beta</a>
-                <a href="" class="header__link">Price</a>
+
+                <div class="header__left">
+                    <a href="" class="header__logo"> <img src="/img/logo.png"></a>
+                    <a href="" class="header__link">Product</a>
+                    <a href="" class="header__link">Developers</a>
+                    <a href="" class="header__link">Beta</a>
+                    <a href="" class="header__link">Price</a>
+                </div>
+                <div class="header__right">
+                    <a href="" class="header__link header__start">Start your project</a>
+                    <a href="" class="header__link header__sign">Sign in</a>
+                </div>
             </div>
-            <div class="header__right">
-                <a href="" class="header__link header__start">Start your project</a>
-                <a href="" class="header__link header__sign">Sign in</a>
-            </div>
-        </div>
         </header>
         <main>
             <section class="store">
@@ -59,13 +59,13 @@
                 <div class="cards__flex">
                     <div class="interaperable">
                         <p class="space cards__text">interaperable</p>
-                        <p class="cards__text">Integrates well with the rest of Supabase ecosystem, including Auth and
-                            Postgres.</p>
+                        <p class="cards__text">Integrates well with the rest of Supabase ecosystem, including Auth and Postgres.
+                        </p>
                     </div>
                     <div class="lighting">
                         <p class="space cards__text">Lighting fast</p>
-                        <p class="cards__text">Thin API server layer that leverages Postgres' permissions and
-                            performance.</p>
+                        <p class="cards__text">Thin API server layer that leverages Postgres' permissions and performance.
+                        </p>
                     </div>
                     <div class="dependable">
                         <p class="space cards__text">Dependable</p>
@@ -87,8 +87,7 @@
                         <p class="sleek__check">Check out our example app</p>
                         <div class="sleek__profile">
                             <p class="sleek__managment">Profile management example</p>
-                            <p class="sleek__update">Update a user account with public profile information, including
-                                uploading a profile image.</p>
+                            <p class="sleek__update">Update a user account with public profile information, including uploading a profile image.</p>
                             <p class="sleek__supabase">Supabase</p>
                         </div>
                         <button class="sleek__btn">Deploy</button>
@@ -102,8 +101,7 @@
                         <p class="simple__subtitle">
                             Built from the ground-up for interoperable authentication.
                         </p>
-                        <p class="simple__text">Fast and easy to implement using our powerful library clients. Asset
-                            optimization and image transformation coming soon!</p>
+                        <p class="simple__text">Fast and easy to implement using our powerful library clients. Asset optimization and image transformation coming soon!</p>
                         <div class="simple__flex-cards">
                             <div class="cards__left">
                                 <img src="/img/wifi.png">
@@ -130,10 +128,9 @@
                         <div>
                             <button class="simple__item" data-path="one">Upload a file</button>
                             <div class="tab-content tab-content-active" data-target="one">
-                                <p class="tab__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Exercitationem assumenda autem, harum placeat veniam sequi sed quaerat aliquam
-                                    aperiam excepturi culpa asperiores voluptatibus quibusdam natus inventore cum at
-                                    minima nemo.</p>
+                                <p class="tab__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem assumenda autem, harum placeat veniam sequi sed quaerat aliquam aperiam excepturi culpa asperiores voluptatibus quibusdam natus inventore cum at minima
+                                    nemo.
+                                </p>
                             </div>
                         </div>
                         <div>
@@ -163,8 +160,7 @@
                         <h2 class="integrates__title">Integrates natively</h2>
                         <p class="integrates__subtitle">Using Postgres Row Level Security to create Object access rules.
                         </p>
-                        <p class="integrates__text">Storage Authorization is built around Postgres so that you can use
-                            any combination of SQL, Postgres functions, and even your own metadata to write policies.
+                        <p class="integrates__text">Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.
                         </p>
                         <button class="integrates__btn">Expore documentation</button>
                     </div>
@@ -172,11 +168,9 @@
                         <div>
                             <button class="integrates__item" data-path="five">Public access to a bucket</button>
                             <div class="integrates-content integrates-content-active" data-target="five">
-                                <p class="integrates__text-content">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit.
-                                    Exercitationem assumenda autem, harum placeat veniam sequi sed quaerat aliquam
-                                    aperiam excepturi culpa asperiores voluptatibus quibusdam natus inventore cum at
-                                    minima nemo.</p>
+                                <p class="integrates__text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem assumenda autem, harum placeat veniam sequi sed quaerat aliquam aperiam excepturi culpa asperiores voluptatibus quibusdam natus inventore cum at minima
+                                    nemo.
+                                </p>
                             </div>
                         </div>
                         <div>
@@ -214,46 +208,50 @@
                     </div>
                 </div>
                 <div class="footer__product">
-                <h4 class="footer__title">Product</h4>
-                <a class="footer__text" href="#">Database</a>
-                <a class="footer__text" href="#">Authentication</a>
-                <a class="footer__text" href="#">Storage</a>
-                <a class="footer__text" href="#">Coming soon</a>
-                <a class="footer__text" href="#">Function</a>
-                <a class="footer__text" href="#">Coming soon</a>
-            </div>
-            <div class="footer__product">
-                <h4 class="footer__title">Resources</h4>
-                <a class="footer__text" href="#">Database</a>
-                <a class="footer__text" href="#">Authentication</a>
-                <a class="footer__text" href="#">Storage</a>
-                <a class="footer__text" href="#">Coming soon</a>
-                <a class="footer__text" href="#">Function</a>
-                <a class="footer__text" href="#">Coming soon</a>
-            </div>
-            <div class="footer__product">
-                <h4 class="footer__title">Developers</h4>
-                <a class="footer__text" href="#">Database</a>
-                <a class="footer__text" href="#">Authentication</a>
-                <a class="footer__text" href="#">Storage</a>
-                <a class="footer__text" href="#">Coming soon</a>
-                <a class="footer__text" href="#">Function</a>
-                <a class="footer__text" href="#">Coming soon</a>
-            </div>
-            <div class="footer__product">
-                <h4 class="footer__title">Company</h4>
-                <a class="footer__text" href="#">Database</a>
-                <a class="footer__text" href="#">Authentication</a>
-                <a class="footer__text" href="#">Storage</a>
-                <a class="footer__text" href="#">Coming soon</a>
-                <a class="footer__text" href="#">Function</a>
-                <a class="footer__text" href="#">Coming soon</a>
-            </div>
+                    <h4 class="footer__title">Product</h4>
+                    <a class="footer__text" href="#">Database</a>
+                    <a class="footer__text" href="#">Authentication</a>
+                    <a class="footer__text" href="#">Storage</a>
+                    <a class="footer__text" href="#">Coming soon</a>
+                    <a class="footer__text" href="#">Function</a>
+                    <a class="footer__text" href="#">Coming soon</a>
+                </div>
+                <div class="footer__product">
+                    <h4 class="footer__title">Resources</h4>
+                    <a class="footer__text" href="#">Database</a>
+                    <a class="footer__text" href="#">Authentication</a>
+                    <a class="footer__text" href="#">Storage</a>
+                    <a class="footer__text" href="#">Coming soon</a>
+                    <a class="footer__text" href="#">Function</a>
+                    <a class="footer__text" href="#">Coming soon</a>
+                </div>
+                <div class="footer__product">
+                    <h4 class="footer__title">Developers</h4>
+                    <a class="footer__text" href="#">Database</a>
+                    <a class="footer__text" href="#">Authentication</a>
+                    <a class="footer__text" href="#">Storage</a>
+                    <a class="footer__text" href="#">Coming soon</a>
+                    <a class="footer__text" href="#">Function</a>
+                    <a class="footer__text" href="#">Coming soon</a>
+                </div>
+                <div class="footer__product">
+                    <h4 class="footer__title">Company</h4>
+                    <a class="footer__text" href="#">Database</a>
+                    <a class="footer__text" href="#">Authentication</a>
+                    <a class="footer__text" href="#">Storage</a>
+                    <a class="footer__text" href="#">Coming soon</a>
+                    <a class="footer__text" href="#">Function</a>
+                    <a class="footer__text" href="#">Coming soon</a>
+                </div>
             </div>
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/tabs.js"></script>
     <script src="/js/burger.js"></script>
 </body>

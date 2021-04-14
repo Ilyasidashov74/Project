@@ -1,20 +1,39 @@
 /* Указываем box sizing */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
+
 /* Убираем внутренние отступы */
 
-ul[class], ol[class] {
+ul[class],
+ol[class] {
     padding: 0;
 }
 
+
 /* Убираем внешние отступы */
 
-body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
     margin: 0;
 }
+
 
 /* Выставляем основные настройки по-умолчанию для body */
 
@@ -25,17 +44,21 @@ body {
     line-height: 1.5;
 }
 
+
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 
-ul[class], ol[class] {
+ul[class],
+ol[class] {
     list-style: none;
 }
+
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 
 a:not([class]) {
     text-decoration-skip-ink: auto;
 }
+
 
 /* Упрощаем работу с изображениями */
 
@@ -44,21 +67,27 @@ img {
     display: block;
 }
 
+
 /* Указываем понятную периодичность в потоке данных у article*/
 
 article>*+* {
     margin-top: 1em;
 }
 
+
 /* Наследуем шрифты для инпутов и кнопок */
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
     font: inherit;
 }
 
 a {
     text-decoration: none;
 }
+
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 
@@ -82,7 +111,7 @@ body {
     display: flex;
     justify-content: space-between;
     height: 60px;
-    margin-bottom: 137px;
+    margin-bottom: 100px;
     align-items: center;
 }
 
@@ -103,9 +132,13 @@ body {
     margin-top: 5px;
 }
 
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header__link {
     color: #EEEE;
-    font-size: 2.3vh;
     margin-right: 50px;
 }
 
@@ -492,7 +525,7 @@ body {
         width: 100%;
     }
     .simple {
-        padding-top: 18vh;
+        padding-top: 10vh;
     }
     .simple__right {
         padding-top: 10vh;
@@ -501,6 +534,7 @@ body {
     }
     .integrates__flex {
         display: block;
+        margin-top: 100px;
     }
     .intedrates__left {
         width: 100%;
@@ -516,17 +550,33 @@ body {
     .header__link {
         font-size: 14px;
     }
-    .store__title, .sleek__title, .simple__title, .integrates__title, .build__title {
+    .store__title,
+    .sleek__title,
+    .simple__title,
+    .integrates__title,
+    .build__title {
         font-size: 30px;
     }
     .store__buscet {
         font-size: 20px;
     }
-    .sleek__file, .sleek__media, .sleek__check, .sleek__update, .store__subtitle, .store__text, .simple__text, .integrates__subtitle, .integrates__text {
+    .sleek__file,
+    .sleek__media,
+    .sleek__check,
+    .sleek__update,
+    .store__subtitle,
+    .store__text,
+    .simple__text,
+    .integrates__subtitle,
+    .integrates__text,
+    .sleek__subtitle {
         font-size: 15px;
     }
     .sleek__managment {
         font-size: 12px;
+    }
+    .sleek {
+        padding-top: 10vh;
     }
     .build {
         margin-left: 10%;
@@ -637,51 +687,92 @@ body {
     .footer__social {
         margin-left: 45%;
     }
-    .build__btn, .store__right, .sleek__flex, .simple__right, .integrates__right {
+    .build__btn,
+    .store__right,
+    .sleek__flex,
+    .simple__right,
+    .integrates__right {
         margin-left: 0px;
     }
-    .build__btn, .store__btn, .integrates__btn {
+    .build__btn,
+    .store__btn,
+    .integrates__btn {
         padding: 9px 10px;
         font-size: 13px;
     }
 }
 
-@media(max-width:750px) {
-    .integrates__item, .simple__item {
+@media(max-width:1050px) {
+    .integrates__item,
+    .simple__item {
         font-size: 12px;
     }
-    .simple, .sleek {
+    .integrates__flex {
+        padding-top: 0px;
+    }
+    .simple,
+    .sleek {
         padding-top: 10vh;
     }
-    .tab__text, .integrates__text-content {
+    .tab__text,
+    .integrates__text-content {
         width: 60%;
     }
 }
 
 @media(max-width:655px) {
-    .tab__text, .integrates__text-content {
+    .tab__text,
+    .integrates__text-content {
         width: 80%;
     }
 }
 
-@media(max-width:500px) {
-    .store__title, .sleek__title, .simple__title, .integrates__title, .build__title {
+@media(max-width:770px) {
+    .store__title,
+    .sleek__title,
+    .simple__title,
+    .integrates__title,
+    .build__title,
+    .cards__cdn {
         font-size: 20px;
     }
-    .sleek__file, .sleek__media, .sleek__check, .sleek__update, .store__subtitle, .store__text, .simple__text, .integrates__subtitle, .integrates__text, .cards__text {
+    .build {
+        padding-top: 8vh;
+    }
+    .sleek__supabase {
+        font-size: 15px;
+    }
+    .integrates__flex {
+        margin-top: 0;
+    }
+    .sleek__file,
+    .sleek__media,
+    .sleek__check,
+    .sleek__update,
+    .store__subtitle,
+    .store__text,
+    .simple__text,
+    .integrates__subtitle,
+    .integrates__text,
+    .cards__text {
         font-size: 12px;
     }
     .store__buscet {
         font-size: 15px;
     }
-    .integrates__item, .simple__item {
+    .integrates__item,
+    .simple__item,
+    .tab__title {
         font-size: 10px;
     }
-    .integrates__text-content, .tab__text {
+    .integrates__text-content,
+    .tab__text {
         font-size: 10px;
     }
-    .integrates, .intedrates__left, .build__title {
-        padding-top: 40px;
+    .integrates,
+    .intedrates__left,
+    .build__title {
+        padding-top: 30px;
     }
 }
 
@@ -698,13 +789,16 @@ body {
     .simple__right {
         padding-top: 3vh;
     }
-    .integrates__text-content, .tab__text {
+    .integrates__text-content,
+    .tab__text {
         margin-top: 40px;
     }
     .cards__flex {
         display: block;
     }
-    .interaperable, .lighting, .dependable {
+    .interaperable,
+    .lighting,
+    .dependable {
         width: 100%;
     }
     .sleek {
