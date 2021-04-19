@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Test</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <form action="https://javascript.ru/forum/misc/70898-input-radio-kak-uznat-vybrannyjj-punkt.html"
+                class="form">
+                <div class="input__one">
+                    <input type="radio" class="custom-radio asd" id="happy" name="Licenseplan" value="13"
+                        onclick="mkChange(this)">
+                    <label for="happy">Licenseplan#1</label>
+                    <span class="label__text">$13 per lilicense</span>
+                </div>
+                <div class="input__two">
+                    <input type="radio" class="custom-radio asd" id="happy-two" name="Licenseplan" value="22"
+                        onclick="mkChange(this)">
+                    <label for="happy-two">Licenseplan#2</label>
+                    <span class="label__text">$22 per lilicense</span>
+                </div>
+                <div class="input__three">
+                    <input type="radio" class="custom-radio asd" id="happy-three" name="Licenseplan" value="34"
+                        onclick="mkChange(this)">
+                    <label for="happy-three">Licenseplan#3</label>
+                    <span class="label__text">$34 per lilicense</span>
+                </div>
+                <hr>
+                <div class="licenses">
+                    <span>Number of licenses</span>
+                    <select id="mk">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <hr>
+                <div class="total">
+                    <h2>Total:</h2><span id="total"></span>
+                </div>
+                <button type="submit" class="form__btn">Buy now</button>
+
+                <a href="" class="plan">Selected plan: #3</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
