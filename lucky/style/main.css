@@ -1,0 +1,248 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Montserat";
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main {
+    display: flex;
+    background: #F4F4F4;
+    padding: 80px;
+}
+
+.trusted {
+    display: none;
+}
+
+/*RIGHT*/
+.reduslim {
+    background: linear-gradient(180deg, #428A60 0%, #35734F 100%);
+    box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+    padding: 40px;
+
+}
+
+.reduslim__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+.reduslim__img {
+    background-image: url("../img/ellip.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.reduslim__content-img {
+    margin-top: 80px;
+
+}
+
+.reduslim__subtitle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/*LEFT*/
+.hero {
+    box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+
+}
+
+.hero__header {
+    background: #F8F8F8;
+    border-radius: 30px;
+}
+
+.hero__title {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+    color: #212121;
+    padding: 40px;
+    width: 478px;
+    margin: 0 auto;
+
+}
+
+.order {
+    background-color: white;
+}
+
+form {
+    padding: 40px;
+}
+
+.order__sel {
+    background-image: url(img/ru.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background: #F8F8F8;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 20px;
+    padding-right: 50px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    color: #212121;
+    text-transform: uppercase;
+}
+
+.order__flex {
+    display: flex;
+    align-items: center;
+}
+
+.order__lab {
+    display: block;
+    letter-spacing: 0.05em;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.order__color {
+    color: #428A60;
+}
+
+.order__inp {
+    align-items: center;
+    padding: 16px 105px 16px 20px;
+    background: #F8F8F8;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.form__btn {
+    width: 320px;
+    height: 42px;
+    left: 757px;
+    top: 473px;
+    background: #428A60;
+    border-radius: 5px;
+    border-color: #428A60;
+    cursor: pointer;
+    color: white;
+
+}
+
+.mini-size {
+    padding: 10px;
+    font-size: 13px;
+    height: 52px;
+}
+
+/*MEDIA*/
+
+
+@media(max-width:1023px) {
+    .reduslim {
+        display: inline-flex;
+        background: none;
+        box-shadow: none;
+        padding: 20px;
+        height: auto;
+    }
+
+    .main {
+        flex-flow: column;
+        background: white;
+        padding: 0px;
+    }
+
+    .black {
+        font-size: 18px;
+        width: 20%;
+        line-height: 130%;
+        color: #212121;
+
+    }
+
+    .reduslim__img {
+
+        margin-top: 10px;
+        padding-top: 57px;
+
+    }
+
+    .reduslim__content-img {
+        margin: 0;
+        width: 100%;
+    }
+
+    .hero {
+        box-shadow: none;
+    }
+
+    .hero__title {
+        width: auto;
+        padding: 20px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .order__inp {
+        width: 100%;
+    }
+
+    .order__sel {
+        margin-left: 10px;
+    }
+
+    .form__btn {
+        width: 100%;
+    }
+
+    .trusted {
+        display: flex;
+        padding: 20px;
+        justify-content: space-around;
+        background: #F8F8F8;
+    }
+
+    .trusted__title {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 130%;
+        text-align: center;
+        color: #212121;
+    }
+
+}

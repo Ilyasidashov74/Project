@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Reduslim</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="reduslim">
+                <h2 class="reduslim__title black">Reduslim</h2>
+                <div>
+                </div>
+                <div class="reduslim__img">
+                    <img class="reduslim__content-img" src="./img/reduslim.png" alt="reduslim">
+                </div>
+                <div>
+                    <h3 class="reduslim__subtitle black">Ecco</h3>
+                </div>
+            </div>
+            <div class="hero">
+
+                <h1 class="hero__title">
+                    Сделай шаг
+                    к выздоровлению
+                </h1>
+                <div class="order">
+                    <form method="post" action="">
+                        <label class="order__lab" for="name">Ваше <span class="order__color">Имя</span></label>
+                        <input class="order__inp" id="name" type="text" required placeholder="Алексей">
+                        <div class="order__flex">
+                            <div>
+                                <label class="order__lab" for="tel">Ваш <span
+                                        class="order__color">телефон</span></label>
+                                <input class="order__inp mini-size" id="tel" type="tel" required
+                                    placeholder="+7 (123) 456 78-90">
+                            </div>
+                            <div>
+                                <select class="order__sel" name="" id="input0" required="required">
+                                    <option style="background-image:url(img/ru.png);" value="ru">ru</option>
+                                    <option style="background-image:url(img/eng.png);" value="eng">eng</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <button class="form__btn" type="submit">Заказать <svg width="18" height="12" viewBox="0 0 18 12"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 6H16.5M16.5 6L11.5 1M16.5 6L11.5 11" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></button>
+                    </form>
+                    <div class="trusted">
+                        <div>
+                            <h3 class="trusted__title">Trusted</h3>
+                        </div>
+                        <div>
+                            <svg width="13" height="15" viewBox="0 0 13 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="5.71429" width="12.1429" height="9.28572" rx="3" fill="#428A60" />
+                                <path
+                                    d="M3.14282 3.92857C3.14282 2.31116 4.45399 1 6.07139 1C7.6888 1 8.99997 2.31117 8.99997 3.92857V6.85714H3.14282V3.92857Z"
+                                    stroke="#428A60" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="trusted__title">
+                                Secure
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/flag.js"></script>
+
+
+</body>
+
+</html>
